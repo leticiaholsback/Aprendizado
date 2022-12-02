@@ -1,0 +1,23 @@
+#permite criar arq. em txt e vai colocando tudo o que for sendo executado, dapra rastrar e monitorar o cod.
+#comunica erro e tomadas de decisoes e de forma simples, lendo o cod consegue saber td oq aconteceu
+import logging 
+logging.basicConfig(filename='app.log') #nome no meu arq txt sera app.log, o arq nao foi escrito
+log= logging.getLogger() #pega a variavel linha4 atribui a outra variavel linha5 e usa os metodos para registrar os dados
+log.info('Oi')
+
+#Esses são os niveis que o logger pode estar, seria para registrar tipos de eventos
+
+# CRITICAL 50 um erro que pode estragar algo
+# ERROR 40 erro
+# WARNING 30 é um aviso
+# INFO 20  uma info mais complexa
+# DEBUG 10 printar cmo esta uma variavel
+# NOTSET 0
+
+#para saber o nivel do log é o seguinte comando
+log.level #ficou nivel 30
+#nesse caso ele só salva niveis critical, error e WARNING, para resitrar, por exemplo tipo INFO tem que setar
+#o log comp padro do tipo 10 para que ele registre toda e qq situação. Por exemplo, num programa eu posso achar 
+#necessário arquivar apenas error e critical, com isso eu deixo setado para 40
+#para deixar um nivel mais baixo, o código da linha 4, ficaria conforme a linha 22
+logging.basicConfig(filename='app.log', level=logging.DEBUG) #toda vez que executa essa celula ele salva no arq app
