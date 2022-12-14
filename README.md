@@ -1,2 +1,1 @@
-# Curso_Guanabara
- Aprendendo com Guanabara
+# Treinando códigos
