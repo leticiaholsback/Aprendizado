@@ -1,0 +1,23 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <script>
+       var idioma = prompt ('Bem vindo ao Tradutor de Boas Vindas para Português (br ou pt) ou Inglês (en ou gb). Por favor, digite o idioma')
+       var variacao = prompt ('Por favor, digite a variação')
+// pt-br - pt-pt = Olá
+//en-us = Hi - en-gb = Hello
+
+// (idioma =='pt') && (variração == 'br' || variação ='pt')
+//         t/f     &&                    t/f          
+        if((idioma=='pt') &&(variacao=='br' || variacao == 'pt')){ // não precisaria colocar essa variaçaõ, mas coloquei para aprender
+            alert ('Olá')
+        } else if (idioma=='en' &&(variacao == 'us')) {
+            alert ('Hi')
+        } else if ((idioma=='en') && (variacao == 'gb')) {
+            alert ('Hello')
+                    } else if ((idioma=='en') && (variacao == 'us')) {
+            alert ('Hi')
+        } else {
+        alert ('Variação ou idioma não reconhecido')
+        }
+    </script>
+</html>
