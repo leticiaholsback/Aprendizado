@@ -1,0 +1,49 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <script>
+        function soma(a,b) {
+            return a + b // return sempre é a ultima linha da funcao
+        }
+
+        function subtracao(a,b){
+            return a - b
+        }
+
+        function divisao (a,b){
+        return a / b
+        }
+
+        function multiplicacao (a,b){
+            return a * b
+        }
+
+        function exponenciacao (a,b){
+            return a ** b
+        }
+        var n1 = Number(prompt('1º Número'))
+        var n2 = Number(prompt('2º Número'))
+        var op = prompt ('Qual operação você deseja? Digite o símbolo:')
+
+        var resultado
+        
+        
+        if(op == '+') {
+            resultado = soma (n1, n2)
+        } else if (op == '-') {
+            resultado = subtracao (n1, n2)
+        } else if (op == '/'){
+            resultado = divisao (n1,n2)
+        }else if (op == '-') {
+            resultado = subtracao (n1, n2)
+        }else if (op == '*') {
+            resultado = multiplicacao (n1, n2)
+        } else if (op == '**') {
+            resultado = exponenciacao (n1, n2) 
+        } else {
+        alert ('Simbolo digitado não reconecido! Digite: + para soma || - para subtração || / para divisão || * para multiplicação || ** para exponenciação')
+        }  
+
+        alert (resultado)
+
+    </script>
+</html>
