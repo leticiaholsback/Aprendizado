@@ -1,0 +1,19 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <script>
+       var idioma = prompt ('Bem vindo ao Tradutor de Boas Vindas!!! Por favor, digite o código do idioma, sendo en para Inglês, pt para Portugues, fr para Frances e es para Espanhol')
+
+       // pt==pt = true
+       if (idioma == 'pt'){
+        alert('Olá')
+       } else if(idioma == 'en'){ // else classificado, só executa nesse caso
+        alert ('Hi')
+       } else if (idioma == 'fr'){
+        alert ('Salut')
+       }else if(idioma == 'es'){
+        alert ('Hola')
+       } else {
+        alert ('Código do idioma não reconhecido')
+       }
+    </script>
+</html>
